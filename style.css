@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary:#FAF7FF;
+    --secondary:#dede00;
+    --green:#7EB013;
+}
+body{
+    color: var(--green);
+    font-family: "Roboto Condensed", sans-serif;
+}
+#main{
+    height: 70vh;
+    background-position:center;
+    background-size: cover;
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/rohit-tandon-9wg5jCEPBsw-unsplash.jpg);
+}
+.container{
+    max-width: 1200px;
+    padding: 16px;
+    margin: auto;
+}
+.logo{
+    color: rgb(247, 248, 248);
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 15px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav .nav-item{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.main-containt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10%;
+}
+.intro{
+    color: whitesmoke;
+    font-size: 50px;
+}
+.intro:first-child{
+    color: #d1e9f6;
+}
+.intro-details{
+    color: rgb(135, 241, 151);
+    font-size: 25px;
+    transform: translateX(-20px);
+}
+.menu-btn{
+    height: 28px;
+    top: 20px;
+    right: 20px;
+    position: absolute;
+    display: none;
+}
+/* section-2 */
+.title h3{
+    text-align: center;
+}
+h3{
+    font-size: 30px;
+    color: #102d0c;
+}
+hr{
+    margin-top: 5px;
+   height: 5px;
+   background-color: red;
+   width: 60px;
+   border-radius: 5px;
+   display: flex;
+   transform: translateX(920%);
+}
+.new{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    text-align: center;
+}
+h4{
+    margin-top: 10px;
+    font-weight: lighter;
+    color: black;
+    font-size: 25px;
+}
+h4::last-child{
+    color: red;
+    font-size: 25px;
+}
+.g-details{
+    border: 1px solid rgb(0, 255, 34);
+    height: 300px;
+    width: 280px;
+    border-radius: 2px;
+}
+/* footer */
+footer{
+    background-color: rgb(116, 116, 116,0.3);
+    height: 300px;
+    margin-top: 20px;
+}
+#contact{
+    text-decoration: underline;
+    /* font-weight: bold; */
+    color: rgb(7, 7, 7);
+    letter-spacing: 1px;
+}
+.data-info{
+     padding-top: 60px;
+  
+}
+@media screen and (max-width:520px) {
+    .menu-btn{
+        display: block;
+    }
+    .logo{
+      transform: translateX(-1px);
+    }
+    .nav-item{
+        flex-direction: column;
+        background: rgb(30, 30, 30);
+        position: absolute;
+        top: 0;
+        right: -900px;
+        width: 65%;
+        height: 100vh;
+        padding-top: 20%;
+        transition: all 1s ease;
+    }
+    .nav-item.active{
+        right: 0;
+    }
+    .nav-item li{
+        text-align: left;
+        width: 100%;
+        padding: 10px 30px;
+        border-bottom: 2px solid white;
+    }
+    .intro-details{
+        padding-left: 20px;
+    }
+    .new{
+        display: flex;
+        flex-direction: column;
+    }
+    .g-details{
+        margin-top: 20px;
+    }
+    
+   
+}
+
+    
